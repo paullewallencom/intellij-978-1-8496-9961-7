@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: brevleq
+  Date: 05/06/13
+  Time: 17:14
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>The contacts</title>
+</h:head>
+
+<h:body>
+    <h:panelGroup layout="block">
+        <h:panelGroup layout="block" styleClass="clearfix">
+            <h:form id="form">
+                <p:dataTable id="personTable" value="#{personTableController.persons}" selection="#{personTableController.selected}"
+                             selectionMode="single" rowKey="#{person.id}" var="person" style="margin-top: 10px;">
+                    <p:ajax event="rowSelect" update=":panelPhoneAndEmail"/>
+                    <p:column headerText="Name">
+                        #{person.completeName}
+                    </p:column>
+                    <p:column headerText="Birth date">
+                        #{person.birthDate}
+                    </p:column>
+                    <p:column headerText="Birth location">
+                        #{person.placeOfBirth}
+                    </p:column>
+                </p:dataTable>
+            </h:form>
+        </h:panelGroup>
+        <h:panelGroup id="panelPhoneAndEmail" layout="block" style="margin-top: 10px">
+            <h:panelGroup layout="block" style="float:left">
+                <p:dataTable value="#{personTableController.selected.phonesById}" var="phone">
+                    <p:column headerText="Phone Number">
+                        #{phone.number}
+                    </p:column>
+                </p:dataTable>
+            </h:panelGroup>
+            <h:panelGroup layout="block" style="float: left">
+                <p:dataTable value="#{personTableController.selected.emailsById}" var="email">
+                    <p:column headerText="E-mail">
+                        #{email.email}
+                    </p:column>
+                </p:dataTable>
+            </h:panelGroup>
+        </h:panelGroup>
+    </h:panelGroup>
+</h:body>
+
+</html>

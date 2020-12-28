@@ -1,0 +1,12 @@
+INSERT INTO contacts.phone (number, id, person_id) VALUES ('33322141', 1, 1);
+INSERT INTO contacts.phone (number, id, person_id) VALUES ('33325510', 2, 1);
+INSERT INTO contacts.phone (number, id, person_id) VALUES ('55211130', 3, 2);
+INSERT INTO contacts.phone (number, id, person_id) VALUES ('55448966', 4, 3);
+INSERT INTO contacts.phone (number, id, person_id) VALUES ('66314886', 5, 4);
+INSERT INTO contacts.phone (number, id, person_id) VALUES ('88176325', 6, 5);
+INSERT INTO contacts.phone (number, id, person_id) VALUES ('99643321', 7, 5);
+INSERT INTO contacts.phone (number, id, person_id) VALUES ('91662430', 8, 5);
+INSERT INTO contacts.phone (number, id, person_id) VALUES ('66802340', 9, 6);
+INSERT INTO contacts.phone (number, id, person_id) VALUES ('55522304', 10, 9);
+INSERT INTO contacts.phone (number, id, person_id) VALUES ('33805529', 11, 10);
+INSERT INTO contacts.phone (number, id, person_id) VALUES ('37411709', 12, 9);

@@ -1,0 +1,12 @@
+INSERT INTO contacts.email (id, email, person_id) VALUES (1, 'judith@taylor.com', 8);
+INSERT INTO contacts.email (id, email, person_id) VALUES (2, 'kate.winston@cia.org', 7);
+INSERT INTO contacts.email (id, email, person_id) VALUES (3, 'john@wilson.com', 1);
+INSERT INTO contacts.email (id, email, person_id) VALUES (4, 'john@yalis.com', 2);
+INSERT INTO contacts.email (id, email, person_id) VALUES (5, 'mary@walker.edu', 3);
+INSERT INTO contacts.email (id, email, person_id) VALUES (6, 'walker@warkers.com', 3);
+INSERT INTO contacts.email (id, email, person_id) VALUES (7, 'lucy@scotch.com', 5);
+INSERT INTO contacts.email (id, email, person_id) VALUES (8, 'kate@winston.com', 7);
+INSERT INTO contacts.email (id, email, person_id) VALUES (9, 'joshua@lee.com', 9);
+INSERT INTO contacts.email (id, email, person_id) VALUES (10, 'lee@lee.org', 9);
+INSERT INTO contacts.email (id, email, person_id) VALUES (11, 'joshua@leelee.com', 9);
+INSERT INTO contacts.email (id, email, person_id) VALUES (12, 'john@super_wilson.com', 1);

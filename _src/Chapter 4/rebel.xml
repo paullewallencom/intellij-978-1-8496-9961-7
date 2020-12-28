@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.zeroturnaround.com"
+             xsi:schemaLocation="http://www.zeroturnaround.com http://www.zeroturnaround.com/alderaan/rebel-2_0.xsd">
+
+    <!--replace /home/brevleq/projetos to your workspace path-->
+
+    <classpath>
+        <dir name="/home/brevleq/projetos/database/out/production/contacts-web">
+            <include name="org/**"/>
+        </dir>
+        <dir name="/home/brevleq/projetos/database/out/production/entities">
+            <include name="org/**"/>
+        </dir>
+    </classpath>
+
+    <web>
+        <link target="/">
+            <dir name="/home/brevleq/projetos/database/contacts-web/web"/>
+        </link>
+    </web>
+
+</application>
